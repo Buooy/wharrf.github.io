@@ -2,15 +2,37 @@
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
   /* The html and body elements cannot have any padding or margin. */
 }
+
+h1, h2, h3, h4{
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+h2{ 
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 6px;
+}
+h3{ /* event-type */
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+h4{ /* feature-title */
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
 .section{
   width: 100%;
-  padding: 50px 0;
 }
 
 /* Wrapper for page content to push down footer */
-#wrap {
+#wrap{
   position:relative;
   min-height: 100%;
   height: auto;
@@ -22,11 +44,11 @@ body {
 
 /* Logo */
 #logo{
-  display:  inline;
-  z-index:  9999;
-  right:    0;
+  display: inline;
+  z-index: 9999;
+  right: 5%;
   position: absolute;
-  padding: 50px;
+  padding-top: 40px;
 }
 #logo img{
   height: 35px;
@@ -34,9 +56,9 @@ body {
 
 /* Menu */
 #menu,#menu-button{
-  display: block;
+  display: none;
   z-index: 99999;
-  position:fixed;
+  position: fixed;
   height: 100%;
 }
 #menu-button{
@@ -46,93 +68,179 @@ body {
 #menu-button:hover{
   cursor: pointer;
 }
-.multilevelpushmenu_wrapper .levelHolderClass {
+.multilevelpushmenu_wrapper .levelHolderClass{
   background: #666;
 }
-.multilevelpushmenu_wrapper h2 {
+.multilevelpushmenu_wrapper h2{
   color: white;
 }
-.multilevelpushmenu_wrapper ul, .multilevelpushmenu_wrapper li, .multilevelpushmenu_wrapper li:last-child {
+.multilevelpushmenu_wrapper ul, .multilevelpushmenu_wrapper li, .multilevelpushmenu_wrapper li:last-child{
   border: none;
-  outline:none;
+  outline: none;
 }
 .multilevelpushmenu_wrapper li:hover{
-  background: #888;
+  background: #888888;
 }
 .multilevelpushmenu_wrapper .multilevelpushmenu_inactive{
   background-color: transparent !important;
 }
 
-
 /* Carousel */
-.carousel {
-  height: 500px;
+.carousel{
+  height: 460px;
 }
 /* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
+.carousel .item{
+  height: 460px;
   background-color: #777;
 }
-.carousel-inner > .item > img {
+.carousel-inner > .item > img{
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 460px;
 }
 
 /* Section: Call to Action */
 #section-call-to-action{
+  background: #f2f2f2;
+  padding: 45px 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
+}
+#section-call-to-action h2{
+  color: #333333;
+}
+#section-call-to-action h3{
+  display: inline-block;
+  margin: 0 10px;
+}
+.action-title{
+  margin: 25px 0 15px 0;
+  color: #808080;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;  
+}
+.get-started{
+  border: none;
+  border-radius: 0px;
+  margin: 30px 0 0 0;
+  padding: 15px 30px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 2px;
 }
 
 /* Section: Features */
 #section-features{
-  background-color: #bbb;
+  background-color: #e6e6e6;
+  padding: 15px 0;
 }
 .feature{
-  background-color: white;
+  background-color: #ffffff;
+  margin: 15px 0;
+  padding: 30px 0;
 }
 .feature img{
-  width: 80%;
+  width: 360px;
 }
-.feature p{
-  padding-top: 40px;
-  text-transform: uppercase;
+.feature h4{
+  padding-top: 30px;
+  color: #808080;
 }
-
 
 /* Section: Sign up */
 #section-sign-up{
   background: url(../img/slider_tribg_1920x690.jpg) repeat center center;
+  padding: 60px 0;
+}
+#section-sign-up h2{
+  color: #ffffff;
+}
+.private-beta{
+  margin: 20px 0 30px 0;
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;  
 }
 #mc_embed_signup{
-  width: 320px;
+  width: 400px;
   margin: 0 auto; 
 }
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 30px;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: #ffffff;
+  border: 0px solid #cccccc;
+  border-radius: 0px;
+  text-align: center;
+  text-transform: uppercase; 
+}
+.yes-i-am{
+  padding: 6px 30px;
+  color: #ffffff;
+  height: 34px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: #b3b3b3;
+  border: none;
+  border-radius: 0px;
+  text-transform: uppercase; 
+}
+.yes-i-am:hover{
+  color: #ffffff;
+  background-color: #333333;
+}
+
 
 /* Set the fixed height of the footer here */
-#footer {
+#footer{
   background: #f5f5f5 url(../img/bg_graygrain_200x200.jpg) repeat center center;
-  height: 140px;
-  padding: 0 20px;
+  padding: 45px 0 55px 0;
   color: white;
 }
-#footer p{
-  line-height: 60px;
+#footer-text{
+  margin: 30px 0 0 0;
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2px;
 }
 
 .social-text, .social-button{
   display: inline-block;
+  margin-left: -3px;
   color: white;
-  margin: -2px;
-  line-height: 40px;
 }
 .social-text{
-  padding: 0px 50px;
+  padding: 8px 36px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase; 
   background-color: black;
 }
 .social-button{
-  padding: 0 20px;
+  padding: 12px 0px;
+  width: 38px;
+  font-size: 13px;
+  line-height: 14px;
   background-color: grey;
 }

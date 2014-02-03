@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
     $('#menu').multilevelpushmenu({
     	collapsed: 		true, 
     	fullCollapse: 	true,
-    	direction: 		'ltr',
+    	direction: 		'rtl',
         menuWidth: 		'250px',    
         wrapperClass: 'multilevelpushmenu_wrapper',
         containersToPush: [ $( '#menu-button' ) ],

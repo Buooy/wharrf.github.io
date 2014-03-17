@@ -365,3 +365,11 @@ div.slide-mock > *{
   }
   
 }
+
+@media all and (max-width: 480px){
+
+  div.slide-mock{
+    width: 240px;
+  }
+  
+}

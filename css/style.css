@@ -389,6 +389,10 @@ div.slide-mock > *{
     letter-spacing: 3px;
   }
 
+  div.slide-header{
+    padding-top: 110px;
+  }
+
   div.slide-mock{
     width: 240px;
   }

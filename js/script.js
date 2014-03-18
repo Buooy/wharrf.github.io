@@ -3,6 +3,7 @@ jQuery(document).ready(function($){
     // test the position of slide mock
     if( $(window).innerHeight() > 840 ){
         $(".slide-mock").css( 'bottom','0px' );
+        $('.slide-header').css( 'margin-top', '60px' );
     }
 
 	// MENU

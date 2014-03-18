@@ -103,7 +103,7 @@ h5{ /* section-title */
 
 /* Carousel */
 .carousel{
-  max-height: 800px;
+  max-height: 1200px;
   overflow: hidden;
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img{

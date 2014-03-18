@@ -31,7 +31,31 @@ jQuery(document).ready(function($){
     	}
     });
 
+    // BTN
+    $('.btn[data-anchor]').click(function(){
+        var anchor = $(this).data('anchor');
+        var top = $("#"+anchor).offset().top + "px";
+
+        $('html,body').animate({
+            scrollTop:   top
+        }, 500);
+    });
+
     // MailChimp
+
+    var attr = location.href;
+    attr = attr.split('?');
+
+    if( attr[1] == 'thank-you' ){
+
+        $('#mc_embed_signup').html('<h3 style="color:white">thank you for your interest</h3>');
+
+        $('html,body').animate({
+            scrollTop:   $('#section-sign-up').offset().top+"px"
+        }, 500);
+
+    }
+
     $('#mailchimp-submit').click(function(){
     	$('#mc-embedded-subscribe-form').submit();
     });

@@ -1,5 +1,10 @@
 jQuery(document).ready(function($){
     
+    // test the position of slide mock
+    if( $(window).innerHeight() > 840 ){
+        $(".slide-mock").css( 'bottom','0px' );
+    }
+
 	// MENU
     $('#menu').multilevelpushmenu({
     	collapsed: 		true, 

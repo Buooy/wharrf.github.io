@@ -103,7 +103,8 @@ h5{ /* section-title */
 
 /* Carousel */
 .carousel{
-  max-height: 740px;
+  max-height: 800px;
+  overflow: hidden;
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img{
   max-width: none;
@@ -135,7 +136,7 @@ div.slide-header{
 }
 div.slide-mock{
   width: 100%;
-  bottom: 0;
+  bottom: -30px;
 }
 div.slide-mock img{
   width: 800px;

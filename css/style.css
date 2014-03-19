@@ -206,6 +206,7 @@ div.slide-mock *{
   background-image: url(../img/slider_3_2560x920.jpg);
   background-repeat: no-repeat;
   background-attachment:fixed;
+  background-size: cover;
   color: white;
 }
 .features{

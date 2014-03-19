@@ -203,7 +203,9 @@ div.slide-mock *{
 /* Section: Features */
 #section-features{
   background-color: #e6e6e6;
-  background: url(../img/slider_3_2560x920.jpg) no-repeat top left fixed;
+  background-image: url(../img/slider_3_2560x920.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
   color: white;
 }
 .features{

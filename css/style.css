@@ -258,7 +258,18 @@ div.slide-mock *{
   background: #cccccc;
 }
 
-
+/* Section: Clients */
+#section-clients{
+  background: #f2f2f2;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#section-clients img{
+  width: 100%;
+  margin-bottom: 15px;
+}
 
 /* Section: Sign up */
 #section-sign-up{

@@ -202,6 +202,9 @@ div.slide-mock *{
 
 /* Section: Features */
 #section-features{
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
   background-color: #e6e6e6;
   background-image: url(../img/slider_3_2560x920.jpg);
   background-repeat: no-repeat;
@@ -228,6 +231,9 @@ div.slide-mock *{
 
 /* Section: Managed Service */
 #section-managed-service{
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
   background-color: #ffffff;
 }
 .service{
@@ -267,7 +273,7 @@ div.slide-mock *{
   color: #cccccc;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;  
 }
 #mc_embed_signup{
@@ -322,7 +328,7 @@ div.slide-mock *{
   color: #cccccc;
   font-size: 12px;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 16px;
   letter-spacing: 2px;
 }
 

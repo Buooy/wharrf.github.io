@@ -279,7 +279,7 @@ div.slide-mock *{
 .pricing-detail p{
 	margin: 0px;
 }
-@media all (max-width: 480px){
+@media all and (max-width: 480px){
 	.pricing-details{
     	max-width: 250px;
     }

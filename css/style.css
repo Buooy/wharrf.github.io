@@ -273,11 +273,16 @@ div.slide-mock *{
 	padding-right: 10px;
 }
 .pricing-detail{
-	width: 90%;
+	width: 92%;
 	vertical-align: top;
 }
 .pricing-detail p{
 	margin: 0px;
+}
+@media all (max-width: 480px){
+	.pricing-details{
+    	max-width: 250px;
+    }
 }
 
 

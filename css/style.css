@@ -6,7 +6,7 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 *{
-	line-height: 150%;
+	line-height: 175% !important;
 }
 
 h1, h2, h3, h4, h5{
@@ -155,7 +155,7 @@ div.slide-mock *{
 /* Section: Call to Action */
 #section-call-to-action{
   background: #f2f2f2;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -204,7 +204,7 @@ div.slide-mock *{
 
 /* Section: Features */
 #section-features{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   background-color: #e6e6e6;
@@ -233,7 +233,7 @@ div.slide-mock *{
 
 /* Section: Managed Service */
 #section-managed-service{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   background-color: #ffffff;
@@ -263,7 +263,7 @@ div.slide-mock *{
 /* Section: Clients */
 #section-clients{
   background: #f2f2f2;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -284,7 +284,7 @@ div.slide-mock *{
 .private-beta{
   margin: 20px 0 30px 0;
   color: #cccccc;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;  
@@ -364,7 +364,7 @@ div.slide-mock *{
   padding: 12px 0px;
   width: 38px;
   font-size: 13px;
-  line-height: 14px;
+  line-height: 16px;
   background-color: grey;
 }
 

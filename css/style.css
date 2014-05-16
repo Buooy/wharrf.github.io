@@ -280,8 +280,11 @@ div.slide-mock *{
 	margin: 0px;
 }
 @media all and (max-width: 480px){
+	.pricing-icon{
+    	display:none;
+    }
 	.pricing-detail{
-    	max-width: 250px;
+    	width: 100%;
     }
 }
 

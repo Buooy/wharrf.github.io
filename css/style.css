@@ -6,7 +6,8 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 *{
-	line-height: 175% !important;
+	line-height: 200% !important;
+	text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5{
@@ -34,11 +35,19 @@ h5{ /* section-title */
   font-weight: 500;
   letter-spacing: 3px;
 }
+.text-justify{
+	text-align: justify;
+}
+
 
 .section{
   padding-top: 80px;
   padding-bottom: 80px;
   width: 100%;
+}
+
+.inline-block{
+	display: inline-block;
 }
 
 /* Wrapper for page content to push down footer */
@@ -154,8 +163,8 @@ div.slide-mock *{
 
 /* Section: Call to Action */
 #section-call-to-action{
-  background: #f2f2f2;
-  font-size: 16px;
+  background-color: #efefef;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -166,6 +175,26 @@ div.slide-mock *{
   display: inline-block;
   margin: 0 10px;
 }
+#section-call-to-action .mockup-container{
+	position:relative;
+	height: 300px;
+}
+#section-call-to-action .mockup-laptop,
+#section-call-to-action .mockup-tablet,
+#section-call-to-action .mockup-phone{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#section-call-to-action .mockup-laptop{
+	width: 100%;
+}
+#section-call-to-action .mockup-tablet{
+	width: 60%;
+}
+#section-call-to-action .mockup-phone{
+	width: 17%;
+}
 .action-title{
   margin: 25px 0 15px 0;
   color: #808080;
@@ -175,7 +204,6 @@ div.slide-mock *{
 }
 .get-started{
   border: none;
-  border-radius: 0px;
   margin: 30px 0 0 0;
   padding: 15px 30px;
   font-size: 12px;
@@ -204,7 +232,7 @@ div.slide-mock *{
 
 /* Section: Features */
 #section-features{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
   background-color: #e6e6e6;
@@ -231,9 +259,31 @@ div.slide-mock *{
   line-height: 18px;
 }
 
+/* Section: Pricing Plans */
+#section-pricing-plans{
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: #ffffff;
+}
+#section-pricing-plans .list-group-item{
+	padding: 15px 30px;
+}
+.pricing-icon{
+	padding-right: 10px;
+}
+.pricing-detail{
+	width: 92%;
+	vertical-align: top;
+}
+.pricing-detail p{
+	margin: 0px;
+}
+
+
 /* Section: Managed Service */
 #section-managed-service{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
   background-color: #ffffff;
@@ -245,13 +295,16 @@ div.slide-mock *{
 .service img{
   width: 80%;
 }
-.bgeee h4, .bgccc h4{
+.bgeee h4, .bgccc h4, .bgaaa h4{
   padding: 0 20px;
   color: #808080;
   line-height: 18px;
 }
-.bgccc h4{
+.bgccc h4, .bgaaa h4{
   color: #ffffff;
+}
+.bgaaa{
+	background: #aaa;
 }
 .bgeee{
   background: #eeeeee;
@@ -263,10 +316,12 @@ div.slide-mock *{
 /* Section: Clients */
 #section-clients{
   background: #f2f2f2;
-  font-size: 16px;
+  background-image: url(../img/customers.jpg);
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: white;
 }
 #section-clients img{
   width: 100%;
@@ -284,7 +339,7 @@ div.slide-mock *{
 .private-beta{
   margin: 20px 0 30px 0;
   color: #cccccc;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;  

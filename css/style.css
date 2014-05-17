@@ -6,7 +6,7 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 *{
-	line-height: 200% !important;
+	line-height: 180% !important;
 	text-rendering: optimizeLegibility;
 }
 
@@ -38,8 +38,14 @@ h5{ /* section-title */
 .text-justify{
 	text-align: justify;
 }
+.text-right{
+  text-align: right;
+}
 
-
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .section{
   padding-top: 80px;
   padding-bottom: 80px;
@@ -64,13 +70,12 @@ h5{ /* section-title */
 /* Logo */
 #logo{
   z-index: 9999;
-  /* left: 5%; */
+  /*left: 5%;*/
   text-align:center;
   display: inline-block;
   position: absolute;
   padding-top: 40px;
-  text-align:center;
-  width: 100%;
+  width:100%;
 }
 #logo img{
   height: 40px;
@@ -78,7 +83,7 @@ h5{ /* section-title */
 
 /* Menu */
 #menu,#menu-button{
-  display: none;
+  display: none; 
   z-index: 99999;
   position: fixed;
   right: 0;
@@ -161,23 +166,48 @@ div.slide-mock *{
   margin: 0 auto;
 }
 
+/* Section: Clients */
+#section-clients{
+  background-color: #f8f8f8;
+  background-image: url(../img/line_devices_2560x1440.png);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#section-clients img{
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 7px;
+}
+
 /* Section: Call to Action */
 #section-call-to-action{
-  background-color: #efefef;
+  background-color: #e6e6e6;
+  background-image: url(../img/slider_3_2560x920.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
 }
 #section-call-to-action h2{
-  color: #333333;
+  color: #fff;
 }
 #section-call-to-action h3{
   display: inline-block;
   margin: 0 10px;
 }
+#section-call-to-action p{
+   color: #fff;
+}
 #section-call-to-action .mockup-container{
 	position:relative;
-	height: 300px;
+	height: 260px;
 }
 #section-call-to-action .mockup-laptop,
 #section-call-to-action .mockup-tablet,
@@ -187,13 +217,13 @@ div.slide-mock *{
 	bottom: 0;
 }
 #section-call-to-action .mockup-laptop{
-	width: 100%;
+	width: 85%;
 }
 #section-call-to-action .mockup-tablet{
-	width: 60%;
+	width: 50%;
 }
 #section-call-to-action .mockup-phone{
-	width: 17%;
+	width: 14%;
 }
 .action-title{
   margin: 25px 0 15px 0;
@@ -214,8 +244,8 @@ div.slide-mock *{
 }
 .btn.get-started{
   margin-top: 25px;
-  color: #333333;
-  background-color: #ffffff;
+  color: #333;
+  background-color: #fff;
   border: 0px solid #cccccc;
 }
 .btn.get-started:hover{
@@ -228,6 +258,40 @@ div.slide-mock *{
   text-transform: uppercase;
 }
 
+@media all and (max-width: 991px){
+  .mockup-container{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  #section-call-to-action .mockup-laptop,
+  #section-call-to-action .mockup-tablet,
+  #section-call-to-action .mockup-phone{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 620px){
+  .mockup-container{
+    max-width:100%;
+    height:280px !important;
+  }
+  #section-call-to-action .mockup-laptop{
+    width:100%;
+  }
+}
+@media all and (max-width: 480px){
+  .mockup-container{
+    height:230px !important;
+  }
+}
+@media all and (max-width: 400px){
+  .mockup-container{
+    height:200px !important;
+  }
+}
 
 
 /* Section: Features */
@@ -235,28 +299,36 @@ div.slide-mock *{
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
-  background-color: #e6e6e6;
-  background-image: url(../img/slider_3_2560x920.jpg);
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: cover;
-  color: white;
+  background-color: #fff;
+  color: #333;
+}
+#section-features h3{
+  color: #666;
+  line-height: 24px;
+  font-size: 20px;
+}
+.feature-divider{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 60%;
 }
 .features{
   margin-top: 10px;
 }
 .feature{
   background-color: #ffffff;
-  margin: 10px 0 10px;
-  padding: 30px 0;
 }
-.feature img{
-  width: 80%;
+.feature:hover{
+  cursor: pointer;
 }
-.feature h4{
-  padding: 30px 20px 10px;
-  color: #808080;
-  line-height: 18px;
+.feature .icons{
+  vertical-align: middle;
+  height: 100px;
+}
+.features h4{
+  color: #666;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 /* Section: Pricing Plans */
@@ -264,7 +336,18 @@ div.slide-mock *{
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
+  background-image: url(../img/slider_3_2560x920.jpg);
   background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  color: white;
+}
+#section-pricing-plans a{
+  color: white;
+}
+#section-pricing-plans .panel{
+   color: #333;
 }
 #section-pricing-plans .list-group-item{
 	padding: 15px 30px;
@@ -278,6 +361,9 @@ div.slide-mock *{
 }
 .pricing-detail p{
 	margin: 0px;
+}
+.panel-footer{
+  padding: 25px; 
 }
 @media all and (max-width: 480px){
 	.pricing-icon{
@@ -319,21 +405,6 @@ div.slide-mock *{
 }
 .bgccc{
   background: #cccccc;
-}
-
-/* Section: Clients */
-#section-clients{
-  background: #f2f2f2;
-  background-image: url(../img/customers.jpg);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: white;
-}
-#section-clients img{
-  width: 100%;
-  margin-bottom: 15px;
 }
 
 /* Section: Sign up */

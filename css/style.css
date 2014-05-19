@@ -406,6 +406,16 @@ div.slide-mock *{
     margin-top: 30px;
     text-align:center;
   }
+  .features-tabs li{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .features-tabs li a{
+   width: 100px;
+  }
+  #features-underline{
+    width:100px;
+  }
 }
 
 /* Section: Pricing Plans */

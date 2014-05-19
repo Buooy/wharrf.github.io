@@ -21,12 +21,12 @@ h2{
   letter-spacing: 6px;
 }
 h3{ /* event-type */
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 3px;
 }
 h4{ /* feature-title */
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -55,6 +55,13 @@ h5{ /* section-title */
 .inline-block{
 	display: inline-block;
 }
+
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
 
 /* Wrapper for page content to push down footer */
 #wrap{
@@ -173,7 +180,7 @@ div.slide-mock *{
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size: cover;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -191,7 +198,7 @@ div.slide-mock *{
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size: cover;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -246,12 +253,13 @@ div.slide-mock *{
   margin-top: 25px;
   color: #333;
   background-color: #fff;
-  border: 0px solid #cccccc;
+  border: 0px solid #333;
 }
 .btn.get-started:hover{
   color: #ffffff;
   background-color: #000000;
   border: 0px solid #cccccc;
+  transition: 0.4s all ease;
 }
 .section-title{
   padding-bottom: 40px;
@@ -296,11 +304,12 @@ div.slide-mock *{
 
 /* Section: Features */
 #section-features{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   background-color: #fff;
   color: #333;
+  padding-bottom: 0px;
 }
 #section-features h3{
   color: #666;
@@ -315,25 +324,93 @@ div.slide-mock *{
 .features{
   margin-top: 10px;
 }
-.feature{
-  background-color: #ffffff;
-}
 .feature:hover{
   cursor: pointer;
 }
 .feature .icons{
   vertical-align: middle;
   height: 100px;
+  color: #666;
+}
+.feature .icons i{
+  vertical-align: bottom;
+  letter-spacing:5px;
+}
+.features h3{
+  margin-top: 20px;
+  padding-top:20px;
+  padding-bottom: 20px;
 }
 .features h4{
   color: #666;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 13px;
+}
+.features-tabs{
+  position:relative;
+}
+.features-tabs li{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.features-tabs li a{
+  width: 120px;
+}
+.features-tabs .fa{
+  line-height:150% !important;
+  border-radius: none;
+}
+#features-underline{
+  border-bottom:2px solid #428bca;
+  display:inline;
+  position:absolute;
+  width:120px;
+  bottom:-3px;
+  left:0px;
+  transition: 0.7s all ease;
+}
+#section-features .nav.nav-pills.navbar{
+  margin-bottom: 0px;
+  vertical-align:bottom;
+}
+#section-features .nav-pills>li>a{
+  background-color: transparent;
+  color: #8A8D90;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+#section-features .nav-pills>li.active>a,
+#section-features .nav-pills>li.active>a:hover, 
+#section-features .nav-pills>li.active>a:focus{
+  color: #428bca;
+  /* border-bottom: 2px solid #428bca; */
+}
+#section-features .nav-pills>li>a:hover, 
+#section-features .nav-pills>li>a:focus{
+  background-color: transparent;
+  color: #535556;
+}
+#section-features-details{
+  border-top: 2px solid #ddd;
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+@media all and (min-width: 992px){
+  .tab-details{
+    padding-left:50px;
+  }
+}
+@media all and (max-width: 991px){
+  .tab-details-content{
+    margin-top: 30px;
+    text-align:center;
+  }
 }
 
 /* Section: Pricing Plans */
 #section-pricing-plans{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   background-image: url(../img/slider_3_2560x920.jpg);
@@ -377,7 +454,7 @@ div.slide-mock *{
 
 /* Section: Managed Service */
 #section-managed-service{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   background-color: #ffffff;
@@ -418,7 +495,7 @@ div.slide-mock *{
 .private-beta{
   margin: 20px 0 30px 0;
   color: #cccccc;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;  
@@ -539,12 +616,12 @@ div.slide-mock *{
     letter-spacing: 4px;
   }
   h3{ /* event-type */
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 3px;
   }
   h4{ /* feature-title */
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 3px;
   }

@@ -41,8 +41,15 @@ jQuery(document).ready(function($){
         }, 500);
     });
 
-    // Popover
+    // Features Popover
     $('.feature').popover();
+
+    // Features Underline
+    featureUnderlineReposition();
+    $('a[data-toggle="tab"]').on('show.bs.tab', function(e){
+        featureUnderlineReposition($(e.target).attr('href'));
+    });
+
 
     // MailChimp
     var attr = location.href;
@@ -70,4 +77,17 @@ _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
 $.src='//v2.zopim.com/?1zrxe6CkX8w8nnISOcvm87mSmVFAzlpJ';z.t=+new Date;$.
 type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 */
+    
+    // Features Functions
+    function featureUnderlineReposition( e ){
+        if(e == null){
+            var features_underline_left = $('.features-tabs li.active').offset().left + parseInt( $('.features-tabs li.active').css("padding-left") );
+        }
+        else{
+            var features_underline_left = $('.features-tabs li a[href='+e+']').offset().left;
+        }
+        //console.log($('.features-tabs li.active').css("padding-left"));
+        $('#features-underline').offset({ left:features_underline_left });
+    }
+
 });

@@ -7,6 +7,24 @@ jQuery(document).ready(function($){
     }
 
 	// MENU
+	function hide_navbar(){
+		if(typeof navbar_hide === 'undefined'){
+			navbar_hide = false;
+		}
+		if(navbar_hide == true ){
+			if( $(window).scrollTop() > 100 ){	
+				$('#top-navbar').fadeIn();	
+			}
+			else{	
+				$('#top-navbar').fadeOut(); 
+			}
+		}
+		else{
+			$('#top-navbar').fadeIn();
+		}
+	}
+	hide_navbar();
+	$(window).on('scroll',function(){ hide_navbar(); });
     $('#menu').multilevelpushmenu({
     	collapsed: 		true, 
     	fullCollapse: 	true,

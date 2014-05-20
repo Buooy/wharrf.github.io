@@ -41,41 +41,46 @@
 
     <!-- Custom google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<script>var navbar_hide = true;</script>
   </head>
   <body>
+  
+	<!-- Fixed navbar -->
+	<div id="top-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="img/logo_text_200x84.png" alt="wharrf logo"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/intro.html">Intro</a></li>
+					<li><a href="/features.html">Features</a></li>
+					<li><a href="/pricing-plans.html">Pricing</a></li>
+					<li><button class="btn btn-success" data-anchor="section-sign-up">Get Started</button></li>
+					<div id="nav-underline"></div>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
 
   	<div id="wrap">
   		<!-- logo -->
   		<div id="logo"><img src="img/logo_text_200x84.png" alt="wharrf logo"></div>
 
-  		<!-- menu -->
-  		<div id="menu-button" data-status="collapse">
-  			<img src="img/menu_bars_56x29.png">
-  			<!-- <h2><i class="fa fa-reorder"></i>&nbsp;</h2> -->
-  		</div>
-		<div id="menu">
-			<nav>
-				<ul>
-					<li><a href="#"><i class="fa fa-laptop"></i>Our Clients</a></li>
-					<li><a href="#"><i class="fa fa-book"></i>Why Wharrf?</a></li>
-					<li><a href="#"><i class="fa fa-shopping-cart"></i>Features</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</nav>
-		</div>
-
-
 	    <!-- Carousel -->
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 	    	<div class="text-center slide-header">
-              <h2>Build A Better Event Website</h2>
-				<h3 class="hidden-xs">conferences•
-					festivals•
-					screenings•
-					seminars•
-					exhibitions</h3>
+				<h1>Build a winning event website</h1>
+				<h3 class="hidden-sm hidden-xs">Conferences &bull; Festivals &bull; Screenings &bull; Seminars &bull; Exhibitions</h3>
 				<button type="button" class="btn btn-default get-started" data-anchor="section-call-to-action">GET STARTED</button>
 			</div>
 	    	<div class="slide-mock text-center">
@@ -102,15 +107,57 @@
 
 	    </div><!-- /.carousel -->
 
-	    <!-- Clients -->
+	    <!-- Call to Action -->
+	    <div id="section-call-to-action" class="section">
+	    	<div class="container">
+				<div class="row text-center">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 text-center"><h1>Event Websites that do more</h1></div>
+				</div>
+				<div class="row">
+					<br>
+				</div>
+	    		<div class="row">
+					<div class="col-md-2"></div>
+	    			<div class="col-md-8 text-center">
+	    				<p>Wharrf is an Event Website Management Platform that helps you build a quality, mobile-optimized event website that works even while you sleep.</p>
+	    				<br>
+	    			</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<div class="icons"><i class="fa fa-heart fa-5x"></i></div>
+						<h3>Easy to Use</h3>
+						<p>Events evolve constantly. Wharrf's intuitive platform makes it easy for you to manage these changes.</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="icons"><i class="fa fa-users fa-5x"></i></div>
+						<h3>Amplify Your Event</h3>
+						<p>Captivate potential attendees with a winning site, then watch it go viral with our social media integration.</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="icons"><i class="fa fa-money fa-5x"></i></div>
+						<h3>Maximize Sponsorship</h3>
+						<p>Wharrf makes it easy to build sponsorship packages, generate leads &amp; maximize their exposure.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+	    				<a type="button" class="btn btn-default find-out-more" href="/features.html">FIND OUT MORE</a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+		
+		<!-- Clients -->
 	    <div id="section-clients" class="section">
 	    	<div class="container">
 	    		<div class="row">
 	    			<div class="col-sm-2"></div>
 	    			<div class="col-sm-8 text-center">
-	    				<h3>
-	    					We've powered event sites for
-	    				</h3>
+	    				<h2>
+	    					We are trusted by
+	    				</h2>
 	    				<br>
 	    			</div>
 	    		</div>
@@ -138,472 +185,6 @@
 	    		</div>
 	    	</div>
 	    </div>
-
-	    <!-- Call to Action -->
-	    <div id="section-call-to-action" class="section">
-	    	<div class="container">
-				<div class="row text-center">
-					<div class="col-md-12"><h2>YOUR EVENT WEBSITE MAKES THE DIFFERENCE</h2></div>
-				</div>
-				<div class="row">
-					<br>
-				</div>
-	    		<div class="row">
-	    			<div class="col-md-6 text-center">
-						<div class="mockup-container">
-							<img class="mockup-laptop" src="img/eventtemplate_1desktop_1190x660.png" alt="Mock Up">
-							<img class="mockup-tablet" src="img/eventtemplate_1tablet_1280x880.png" alt="Mock Up">
-							<img class="mockup-phone" src="img/eventtemplate_1mobile_750x1370.png" alt="Mock Up">
-						</div>
-					</div>
-	    			<div class="col-md-6 text-justify">
-	    				<p><b>Wharrf is an Event Website Management Tool that helps you build a quality, mobile-optimized website for your event.</b></p>
-                      	<p>Do you want to attract attendees and sponsors? Do you want to make your event stand out from the rest? If the answer is yes, Wharrf is here to help you!</p>
-	    			</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 text-center">
-	    				<button type="button" class="btn btn-default get-started" data-anchor="section-sign-up">CONTACT US</button>
-	    			</div>
-	    		</div>
-	    	</div>
-	    </div>
-
-	    <!-- Features -->
-	    <div id="section-features" class="section">
-	    	<div class="container">
-	    		<div class="row">
-		    		<div class="col-md-2"></div>
-		    		<div class="col-md-8 text-center">
-		    		    <div class="section-title">
-		    				<h2>Smart Features</h2>
-		    				<br>
-		    				<p>Wharrf comes with unique features that were built specifically with event organisers in mind. Jumpstart your event site with us.</p>
-		    			</div>
-		    		</div>
-		    	</div>
-		    	<div class="row features-tabs centered-pills">
-		    		<ul class="nav nav-pills navbar">
-		    			<!-- <li class="active"><a href="#feature-overview" data-toggle="tab"><i class="fa fa-bullseye fa-3x"></i><br>Overview</a></li> -->
-						<li class="active"><a href="#feature-inspire" data-toggle="tab"><i class="fa fa-child fa-3x"></i><br>Inspire</a></li>
-						<li><a href="#feature-manage" data-toggle="tab"><i class="fa fa-gears fa-3x"></i><br>Manage</a></li>
-						<li><a href="#feature-amplify" data-toggle="tab"><i class="fa fa-users fa-3x"></i><br>Amplify</a></li>
-						<div id="features-underline"></div>
-					</ul>
-		    	</div>
-		    </div><!-- container -->
-
-		 	<div id="section-features-details">
-		    	<div class="tab-content container">
-		    		<!-- Feature Overview --
-		    		<div class="tab-pane fade in active" id="feature-overview">
-				    		<div class="row features">
-				    			<div class="col-md-6 text-center">
-				    				<h3>Take it to the next level</h3>
-				    				<p>With Wharrf, we aim to help you do three things really well:</p>
-				    			</div>
-				    			<div class="col-md-6 text-center">
-				    			</div>
-				    		</div>
-				    </div><!-- tab-pane: feature-overview -->
-
-				    <!-- Feature Inspire -->
-		    		<div class="tab-pane fade in active" id="feature-inspire">
-					    	<div class="row features-header">
-					    		<div class="col-md-12 visible-xs visible-sm text-center">
-					    			<h3>Quality Designs</h3>
-					    		</div>
-					    	</div>
-				    		<div class="row features">
-				    			<div class="col-md-6">
-				    				<div class="row">
-						    			<!-- Sleek Responsive Design -->
-						    			<div class="col-xs-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Each theme is handcrafted with love by our dedicated design team. We take pride in making sure that your website looks and feels just like the world class event it is.">
-							    			<div class="icons">
-							    				<i class="fa fa-thumbs-o-up fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Sleek Modern Design</h4>
-								    		</div>
-								    	</div>
-
-								    	<!-- Mobile Websites -->
-						    			<div class="col-xs-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="All our themes are mobile responsive. This means that the layout and structure of your website re-arranges itself to fit your audience's mobile device, so you don't lose out on the mobile market.">
-							    			<div class="icons">
-							    				<i class="fa fa-tablet fa-4x"></i>
-							    				<i class="fa fa-mobile fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>In-Built Mobile Site</h4>
-								    		</div>
-								    	</div>
-									</div><!-- row -->
-									<div class="row">
-								    	<!-- Built Specifically for event organisers -->
-						    			<div class="col-xs-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="At Wharrf, we have optimized and are consistently improving the design of each theme with best practices for events.">
-							    			<div class="icons">
-							    				<i class="fa fa-calendar fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Specific to Events</h4>
-								    		</div>
-								    	</div>
-
-								    	<!-- Drag & Drop Layout -->
-						    			<div class="col-xs-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="We recognize that no two events are the same, so your websites shouldn't either. Use our inituitive drag and drop layout builder to customize how your event website looks.">
-							    			<div class="icons">
-							    				<i class="fa fa-th fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Drag &amp; Drop Layout</h4>
-								    		</div>
-								    	</div>
-									</div>
-								</div><!-- col-md-6 -->
-								<div class="col-md-6 tab-details">
-									<h3 class="hidden-xs hidden-sm">Inspire with Quality Designs</h3>
-									<p class="tab-details-content">Wharrf's themes were lovingly handcrafted to great detail so your website reflects the world class event that you are running. Oh! Did we mention it's mobile ready from the start?</p>
-								</div>
-				    		</div>
-				    		<div class="row text-center">
-				    			<br>
-				    			<button type="button" class="btn btn-default get-started" data-anchor="section-sign-up">GET STARTED</button>
-				    		</div>
-				    </div> <!-- tab-pane: feature-inspire -->
-
-
-				    <!-- Feature Manage -->
-		    		<div class="tab-pane fade" id="feature-manage">
-				    		<!-- Manage with Ease -->
-				    		<div class="row features-header">
-					    		<div class="col-md-12 visible-xs visible-sm text-center">
-					    			<h3>Manage with Ease</h3>
-					    		</div>
-					    	</div>
-
-					    	<div class="row features">
-					    		<div class="col-md-6">
-				    				<div class="row">
-						    			<!-- Sponsors -->
-						    			<div class="col-sm-4 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Sponsors are constantly coming in! With Wharrf's event-specific content management system, add/change any sponsors and watch it populate across the entire event site.">
-							    			<div class="icons">
-							    				<i class="fa fa-money fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Sponsors</h4>
-								    		</div>
-								    	</div>
-
-								    	<!-- Speakers -->
-						    			<div class="col-sm-4 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Managing Speakers can be tricky. At Wharrf, we recognize that. We help you better manage your speakers and the programmes that they are presenting at.">
-							    			<div class="icons">
-							    				<i class="fa fa-user fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Speakers</h4>
-								    		</div>
-								    	</div>
-
-								    	<!-- Surveys -->
-						    			<div class="col-sm-4 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Events should be a two-way interaction. With Wharrf, you can easily build surveys for your stakeholders. Get testimonials and feedbacks from your attendees, build new sponsors enquiry, call for proposals and more.">
-							    			<div class="icons">
-							    				<i class="fa fa-check-square-o fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Surveys</h4>
-								    		</div>
-								    	</div>
-								    </div><!-- row -->
-									<div class="row">
-								    	<!-- Agenda -->
-						    			<div class="col-sm-4 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Wharrf makes it easy for event organisers to manage their agenda/programme schedule. Use our inituitive drag and drop schedule builder to develop your programme and easily publish it into a mobile responsive format.">
-							    			<div class="icons">
-							    				<i class="fa fa-calendar-o fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Agenda</h4>
-								    		</div>
-								    	</div>
-
-								    	<!-- News -->
-						    			<div class="col-sm-4 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Keeping your attendees updated is critical to events engagement and your website is the central platform for you to do that. Wharrf makes it easy to create notifications and news widgets for you to achieve that.">
-							    			<div class="icons">
-							    				<img src="fonts/news-128.png" style="width:58px;padding-top:30px">
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>News</h4>
-								    		</div>
-								    	</div>
-
-								    	<!-- Your Content -->
-						    			<div class="col-sm-4 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Every event is different, so you shouldn't be restricted from adding the content that makes yours unique. Wharrf makes it easy for you to add new content and pages to your website with our inituitve drag and drop layout builder.">
-							    			<div class="icons">
-							    				<i class="fa fa-cog fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Your Content</h4>
-								    		</div>
-								    	</div>
-								    </div><!-- row -->
-								</div> <!-- col-md-6 -->
-								<div class="col-md-6 tab-details">
-									<h3 class="hidden-xs hidden-sm">Manage with Ease</h3>
-									<p class="tab-details-content">
-										Event websites are rich in content that are constantly changing. Wharrf takes the pain out of managing these content with our unique events specific Content Management System.
-									</p>
-								</div>
-				    		</div>
-				    		<div class="row text-center">
-				    			<br>
-				    			<button type="button" class="btn btn-default get-started" data-anchor="section-sign-up">GET STARTED</button>
-				    		</div>
-				    </div><!-- tab-pane: feature-manage -->
-
-
-				    <!-- Feature Amplify -->
-		    		<div class="tab-pane fade" id="feature-amplify">
-			    		<!-- Get Found -->
-			    		<div class="row features-header">
-				    		<div class="col-md-12 visible-xs visible-sm text-center">
-				    			<h3>Amplify &amp; Get Found</h3>
-				    		</div>
-				    	</div>
-
-				    	<div class="row features">
-				    		<div class="col-md-6">
-				    				<div class="row">
-							    		<!-- Custom Domain Name -->
-						    			<div class="col-sm-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="While we provide you with a subdomain name from Wharrf, we now that having one of your own is critical to your event. So we made it easy for you to map your domain name to us.">
-							    			<div class="icons">
-							    				<i class="fa fa-globe fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>Custom Domain Name</h4>
-								    		</div>
-								    	</div>
-
-						    			<!-- Search Engine Optimized -->
-						    			<div class="col-sm-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Wharrf themes are built with Search Engine Optimization in mind. SEO-friendly techniques such as meta tags, clean indexable HTML markups and image taggings are automatically generated so that you can keep your events easily found.">
-							    			<div class="icons">
-							    				<i class="fa fa-search fa-4x"></i>
-								    		</div>
-								    		<div class="text-center">
-								    			<h4>SEO Friendly</h4>
-								    		</div>
-								    	</div>
-								    </div>
-								    <div class="row">
-								    	<!-- Social Media Integration -->
-						    			<div class="col-sm-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Go Social! Wharrf makes it easy for your audience to share your event and follow your event or organization. To make it easier, Wharrf automatically creates the necessary social media meta tags for you.">
-						    				<div class="icons">
-						    					
-							    				<i class="fa fa-google-plus fa-4x"></i>
-
-							    				<i class="fa fa-twitter fa-4x"></i>
-
-							    				<i class="fa fa-facebook fa-4x"></i>
-							    			</div>
-									    	<div class="text-center">
-									    			<h4>Social Media</h4>
-									    	</div>
-								   	 	</div>
-
-								   	 	<!-- Website Analytics -->
-						    			<div class="col-sm-6 feature text-center"
-						    				data-container="body" 
-						    				data-trigger="hover"
-						    				data-toggle="popover" 
-						    				data-placement="top" 
-						    				data-content="Wharrf monitors your Page Views, Visit Counts, and Visitor Counts with Google Analytics integration, so that you can have insights into your event visitors.">
-						    				<div class="icons">
-						    					<i class="fa fa-bar-chart-o fa-4x"></i>
-							    			</div>
-									    	<div class="text-center">
-									    			<h4>Website Analytics</h4>
-									    	</div>
-								   	 	</div>
-								   	</div>
-							</div><!-- col-md-6 -->
-							<div class="col-md-6 tab-details">
-								<h3 class="hidden-xs hidden-sm">Amplify Your Reach</h3>
-								<p class="tab-details-content">
-									Wharrf comes with the necessary tools and features to help you reach your potential audiences. Let's get found by by your attendees and maximise your sponsor's exposure.
-								</p>
-							</div>
-				    	</div>
-					    <div class="row text-center">
-				    			<br>
-				    			<button type="button" class="btn btn-default get-started" data-anchor="section-sign-up">GET STARTED</button>
-				    		</div>
-						</div><!-- tab-pane: Feature Amplify -->
-					</div><!-- tab content -->
-			    </div><!-- section-features-details -->
-
-	    	</div>
-	    </div>
-
-		<!-- Pricing Plans -->
-		<div id="section-pricing-plans" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="section-title text-center col-md-8">
-						<h2>Pricing Plans</h2>
-						<br>
-						<p>When it comes to pricing, Wharrf follows the <a href="http://en.wikipedia.org/wiki/KISS_principle" target="_blank">KISS principle</a>.<br>We are still working on our Starter plan, but feel free to leave us your details and we will get in touch with you!</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="panel panel-default">
-							<div class="panel-heading"><h3 class="text-center">Starter</h3></div>
-							<div class="panel-body text-center">
-								<h2>Coming Soon!</h2>
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div> 
-									<div class="inline-block pricing-detail"><p>Perfect for small events who want to build the website on their own</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Events-Specific Content Management System</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Quality Mobile Responsive Themes</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Easy Integration with Ticketing Providers Including EventBrite</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Custom Domain Name</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Friendly Customer Support</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>And Much More...</p></div>
-								</li>
-							</ul>
-							<div class="panel-footer">
-							<a class="btn btn-lg btn-block btn-success" disabled>Coming Soon!</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="panel panel-default">
-							<div class="panel-heading"><h3 class="text-center">Enterprise</h3></div>
-							<div class="panel-body text-center">
-								<h2>Contact Us</h2>
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Perfect for event organisers who want to <u>impress</u> and <u>bring value</u> to their clients</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Custom Unique Designs for Each Event</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div> 
-									<div class="inline-block pricing-detail"><p>Integrate with Custom Ticketing Systems</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div> 
-									<div class="inline-block pricing-detail"><p>Advisory and Consultation On Your Technological Needs</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div> 
-									<div class="inline-block pricing-detail"><p>Full Web Infrastructure Management</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>Premium Support From Our Dedicated Team</p></div>
-								</li>
-								<li class="list-group-item">
-									<div class="inline-block pricing-icon"><i class="fa fa-check text-danger"></i></div>
-									<div class="inline-block pricing-detail"><p>A Business Partner that You Can Trust</p></div>
-								</li>
-							</ul>
-							<div class="panel-footer">
-							<a class="btn btn-lg btn-block btn-warning" data-anchor="section-sign-up">Let's Get Started!</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!-- end of sample container -->
-		</div>
 
 	    <!-- Sign Up -->
 	    <div id="section-sign-up" class="section">

@@ -2,7 +2,8 @@
 html,
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   /* The html and body elements cannot have any padding or margin. */
 }
 *{
@@ -12,11 +13,18 @@ body {
 
 h1, h2, h3, h4, h5{
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family:'Raleway', sans-serif;
   text-transform: uppercase;
 }
+h1{
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: 4px;
+	line-height: 150% !important;
+}
 h2{ 
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   letter-spacing: 6px;
 }
@@ -89,6 +97,21 @@ h5{ /* section-title */
 }
 
 /* Menu */
+#top-navbar{
+	background-color: #fafafa;
+	display: none;
+}
+#top-navbar img{
+	height: 25px;
+	-webkit-filter: invert(100%);  
+}
+.navbar-brand{
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+.navbar-nav>li>button{
+	margin-top:8px;
+}
 #menu,#menu-button{
   display: none; 
   z-index: 99999;
@@ -175,8 +198,8 @@ div.slide-mock *{
 
 /* Section: Clients */
 #section-clients{
-  background-color: #f8f8f8;
-  background-image: url(../img/line_devices_2560x1440.png);
+  color: #f8f8f8;
+  background-image: url(../img/customers.jpg);
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size: cover;
@@ -193,8 +216,8 @@ div.slide-mock *{
 
 /* Section: Call to Action */
 #section-call-to-action{
-  background-color: #e6e6e6;
-  background-image: url(../img/slider_3_2560x920.jpg);
+  background-color: #fafafa;
+  background-image: url(../img/line_devices_2560x1440.png);
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size: cover;
@@ -202,15 +225,18 @@ div.slide-mock *{
   font-weight: 500;
   letter-spacing: 2px;
 }
-#section-call-to-action h2{
-  color: #fff;
+#section-call-to-action h1{
+	text-shadow:0px 0px #f1f1f1;
+	color: #333;
+	letter-spacing: 1px;
+	line-height:150% !important;
 }
 #section-call-to-action h3{
   display: inline-block;
   margin: 0 10px;
 }
 #section-call-to-action p{
-   color: #fff;
+   color: #444;
 }
 #section-call-to-action .mockup-container{
 	position:relative;
@@ -239,7 +265,7 @@ div.slide-mock *{
   font-weight: 500;
   letter-spacing: 3px;  
 }
-.get-started{
+.get-started, .find-out-more{
   border: none;
   margin: 30px 0 0 0;
   padding: 15px 30px;
@@ -249,17 +275,27 @@ div.slide-mock *{
   letter-spacing: 2px;
   margin: 0 auto;
 }
-.btn.get-started{
+.btn.get-started, .find-out-more{
   margin-top: 25px;
   color: #333;
   background-color: #fff;
   border: 0px solid #333;
 }
+.find-out-more{
+	color: #ffffff;
+	background-color: #000000;
+}
+.btn.get-started:hover, .find-out-more:hover{
+	border: 0px solid #cccccc;
+	transition: 0.4s all ease;
+}
 .btn.get-started:hover{
-  color: #ffffff;
-  background-color: #000000;
-  border: 0px solid #cccccc;
-  transition: 0.4s all ease;
+	color: #ffffff;
+	background-color: #000000;
+}
+.find-out-more:hover{
+	color: #ffffff;
+	background-color: #222;
 }
 .section-title{
   padding-bottom: 40px;
@@ -301,7 +337,23 @@ div.slide-mock *{
   }
 }
 
-
+/* Section: Call to Action Page */
+.intro-call-to-action{
+	height:600px;
+}
+.intro-call-to-action h1{
+	line-height: 60px !important;
+	margin-top: 200px;
+}
+@media all and (max-width: 767px){
+	.intro-call-to-action{
+		height:500px;
+	}
+	.intro-call-to-action h1{
+		line-height: 60px !important;
+		margin-top: 20px;
+	}
+}
 /* Section: Features */
 #section-features{
   font-size: 16px;
@@ -654,7 +706,7 @@ div.slide-mock *{
     width: 240px;
   }
 
-  .btn.get-started{
+  .btn.get-started, .btn.find-out-more{
     margin-top: 15px;
   }
 
